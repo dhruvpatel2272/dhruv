@@ -5,11 +5,17 @@
     font-family: 'poppins',sans-serif;
     list-style: none;
     text-decoration: none;
-    
 }
+
 body{
     background-color: #f2f2f2;
 }
+
+.btn-icon {
+    margin-right: 10px;
+}
+
+/*Navbar*/
 .navbar{
     position: fixed;
     right: 0;
@@ -27,13 +33,16 @@ body{
 .navbar:hover{
     box-shadow: 0 0.2rem 1rem #0da38d;
 }
+
 .navbar .logo  {
     width: 125px;
     height: 66.5px;
 }
+
 .navlist{
     display: flex;
 }
+
 .navlist a{
     color: #4d4d4d;
     margin-left: 60px;
@@ -55,16 +64,18 @@ body{
     cursor: pointer;
     display: none;
 }
+
 #menu-icon:hover{
     color: #0da38d;
 }
 
+/*Home*/
 .home {
     width: 100%;
 }
 
 .home-content {
-    padding: 200px 0 0 100px;
+    padding: 150px 0 0 100px;
     color: #4d4d4d;
     font-weight: 700;
 }
@@ -87,9 +98,9 @@ body{
 }
 
 .home__img {
-    position: absolute;
-    top: 180px;
-    right: 150px;
+    position: relative;
+    top: -320px;
+    left: 800px;
     width: 380px;
 }
 
@@ -111,7 +122,7 @@ body{
 .icon i {
     font-size: 2rem;
     color: #4d4d4d;
-    padding: 0 30px 0 0;
+    padding: 0 40px 0 0;
 }
 
 .icon i:hover {
@@ -119,15 +130,11 @@ body{
 }
 
 .aboutme-btn {
-    position: absolute;
+    position: relative;
     padding: 0.7rem 2rem;
     font-weight: 600;
-    top: 550px;
+    top: 80px;
     left: 100px;
-}
- 
-.btn-icon {
-    margin-right: 10px;
 }
 
 .aboutme-btn--hero {
@@ -141,373 +148,6 @@ body{
     border: 2px solid #0da38d;
 }
 
-.about {
-    margin-top: 20px;
-    width: 100%;
-    padding-left: 80px;
-}
-
-.about-content {
-    color: #4d4d4d;
-    font-weight: 700;  
-}
-
-.about-content .text-1 {
-    font-size: 45px;
-    padding: 100px 0 60px;
-}
-
-.about-content .text-1 span {
-    color: #4d4d4d;
-    border-bottom: solid #4d4d4d;
-}
-
-.about-content .text-2 {
-    font-size: 30px;
-    margin-left: 35%;
-}
-
-.about-content .text-2 span {
-    color: #0da38d;
-}
-.about-content .text-3 {
-    font-size: 15px;
-    text-align: justify;
-    padding-top: 15px;
-    margin-left: 35%;
-    padding-right: 100px;
-}
-
-.about-data {
-    margin-top: 50px;
-    color: #4d4d4d;
-    font-weight: 700; 
-    font-size: 17px;
-    line-height: 30px;
-}
-
-.about-data table{
-    margin-left: 35%;
-}
-
-.about-data td{
-    padding-right: 50px;
-}
-
-.about-data span {
-    color: #0da38d;
-}
-
-.about__img {
-    position: absolute;
-    top: 120%;
-    left: 60px;
-    width: 350px;
-}
-
-
-.about__blob-img {
-    width: 120px;
-}
-
-.btn-download {
-    position: relative;
-    padding: 0.7rem 2rem;
-    font-weight: 600;
-    top: 50px;
-    margin-left: 35%;
-}
- 
-.btn-contact {
-    position: relative;
-    padding: 0.7rem 2rem;
-    font-weight: 600;
-    top: 50px;
-    margin-left: 30px;
-}
-.about-icon {
-    margin-right: 10px;
-}
-
-.about-btn--hero {
-    border: 2px solid #4d4d4d;
-    border-radius: 27px;
-    color: #4d4d4d;
-}
-  
-.about-btn--hero:hover {
-    color: #0da38d;
-    border: 2px solid #0da38d;
-}
-
-.skills {
-    background-color: #f2f2f2;
-}
-  
-.section__title {
-    padding-top: 150px;
-    font-size: 45px;
-    color: #4d4d4d;
-}
-  
-.section__subtitle {
-    display: block;
-    font-size: 19px;
-    margin-bottom: 3rem;
-    color: #0da38d;
-}
-  
-.section__title, 
-.section__subtitle {
-    text-align: center;
-}
-  
-  /*==================== LAYOUT ====================*/
-.container {
-    max-width: 768px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-  
-.grid {
-    display: grid;
-    gap: 1.5rem;
-}
-  
-.skills__container{
-    margin: 0 auto;
-}
-  
-.skills__header{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    cursor: pointer;
-    color: #4d4d4d;
-}
-  
-.skills__icon,
-.skills__arrow{
-    font-size: 2rem;
-    color: #4d4d4d;
-}
-
-.skills__icon{
-    margin-right: 0.75rem;
-}
-  
-.skills__title{
-    font-size: 1.3rem;
-}
-
-.skills__subtitle{
-    font-size: 0.813rem;
-    color: #37c8ab;
-}
-
-.skills__arrow{
-    margin-left: auto;
-    transition: .4s;
-}
-  
-.skills_list{
-    row-gap: 1.5rem;
-    padding-left: 2.7rem;
-}
-  
-.skills__titles{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5;
-    color: #4d4d4d;
-}
-  
-.skills__name,.skills__number{
-    font-size: 0.938rem;
-    font-weight: 600;
-}
-  
-.skills__bar,
-.skills__percentage{
-    height: 5px;
-    border-radius: .25rem;
-}
-.skills__bar{
-    background-color: #9d9d9d;
-}
-  
-.skills__percentage{
-    display: block;
-    background-color:#0da38d;
-}
-  
-.skills__html{
-    width: 90%;
-}
-.skills__css{
-    width: 80%;
-}
-.skills__js{
-    width: 60%;
-}
-.skills__react{
-    width: 85%;
-}
-
-.skills__php{
-    width: 80%;
-}
-.skills__node{
-    width: 70%;
-}
-.skills__firebase{
-    width: 90%;
-}
-  
-.skills__figma{
-    width: 90%;
-}
-.skills__sketch{
-    width: 80%;
-}
-.skills__photoshop{
-    width: 85%;
-}
-    
-.skills__close .skills__list{
-    height: 0;
-    overflow: hidden;
-}
-  
-.skills__open .skills__list{
-    height: max-content;
-    margin-bottom: 2.5rem;
-}
-  
-.skills__open .skills__arrow{
-    transform: rotate(-180deg);
-}
-
-
-.contact {
-    padding-top: 95px;
-    width: 100%;
-}
-
-.contact-content {
-    color: #4d4d4d;
-    font-weight: 700;  
-    text-align: center;
-}
-
-.contact-content .text-1 {
-    font-size: 35px;
-    padding-bottom: 10PX;
-}
-
-.contact-content .text-2 {
-    font-size: 21px;
-    padding-bottom: 10px;
-}
-
-.contact-content .text-3 {
-    font-size: 16px;
-}
-
-.contact-info {
-    padding-top: 35px;
-    float: left;
-    width: 25%;
-    text-align: center;
-    line-height: 1.3;
-}
-
-.contact-btn-icon {
-    font-size: 1.1rem;
-    color: #0da38d;
-}
-
-.contact-info-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #4d4d4d;
-}
-
-.contact-info-way {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: #0da38d;
-    margin-bottom: 30px;
-}
-
-.form-content {
-    color: #4d4d4d;
-    font-weight: 700;  
-    text-align: center;
-}
-
-.form-content .text-1 {
-    font-size: 21px;
-    padding-bottom: 10px;
-}
-
-.form-content .text-2 {
-    font-size: 17px;
-    padding-bottom: 25px;
-}
-
-.form {
-    margin-left: 10%;
-}
-
-.form-data {
-    border: 1px solid #0da38d;
-    font-size: 12px;
-    padding: 8px 8px;
-    border-radius: 27px;
-    background-color: white;
-    color: #0da38d;
-}
-
-.name {
-    width: 44.5%;
-    margin-right: 8px;
-}
-
-.email {
-    width: 44.5%;
-}
-
-.subject {
-    width: 90%;
-    margin-top: 5px;
-}
-
-.message {
-    width: 90%;
-    margin-top: 5px;
-    resize: none;
-}
-
-.btn {
-    padding: 5px;
-    font-weight: 600;
-    font-size: 13px;
-    border: 2px solid #4d4d4d;
-    border-radius: 27px;
-    background-color: #4d4d4d;
-    color: #f2f2f2;
-    width: 90%;
-    margin-bottom: 15px;
-}
-
-.btn:hover {
-    border: 2px solid #0da38d;
-    background-color: #0da38d;
-    color: #4d4d4d;
-}
-
-
 @media (max-width: 990px){
     #menu-icon{
         display: block;
@@ -518,7 +158,7 @@ body{
         top: 0;
         right: -100%;
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         background: #f2f2f2;
         display: flex;
         align-items: center;
@@ -535,5 +175,78 @@ body{
     }
     .navlist.open{
         right: 0;
+    }
+
+
+    .home-content {
+        padding: 200px 0 0 100px;
+    }
+    
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+    
+    .home-content .text-2 {
+        font-size: 45px;
+    }
+    
+    .home-content .text-3 {
+        font-size: 30px;
+    }
+    
+    .home__img {
+        position: relative;
+        top: -250px;
+        left: 600px;
+        width: 280px;
+    }
+
+    .icon i {
+        font-size: 1.8rem;    
+    }
+
+    .aboutme-btn {
+        position: relative;
+        padding: 0.7rem 2rem;
+        font-weight: 600;
+        top: 70px;
+        left: 100px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .home-content {
+        padding: 400px 0 0 100px;
+    }
+    
+    .home-content .text-1 {
+        font-size: 15px;
+    }
+    
+    .home-content .text-2 {
+        font-size: 35px;
+    }
+    
+    .home-content .text-3 {
+        font-size: 20px;
+    }
+    
+    .home__img {
+        position: relative;
+        top: -450px;
+        left: 30%;
+        width: 200px;
+    }
+
+    .icon i {
+        font-size: 1.5rem;    }
+
+    .aboutme-btn {
+        position: relative;
+        padding: 0.7rem 2rem;
+        font-weight: 600;
+        top: 70px;
+        left: 100px;
     }
 }
